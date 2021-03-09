@@ -21,6 +21,7 @@ import java.nio.file.Files;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
+import olc_p1.lectura_de_datos;
 /**
  *
  * @author R0GV3_00
@@ -155,34 +156,16 @@ public class UI_0001 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
       
-       String var3;
+           String var3;
        var3=jTextArea1.getText();
-        analizadores.Sintactico pars;
-        try {
-            //pars=new analizadores.Sintactico(new analizadores.Lexico(new FileInputStream(path)));
-            //pars=new analizadores.Sintactico(new analizadores.Lexico(new FileInputStream("entrada.txt")));
-            pars=new analizadores.Sintactico(new analizadores.Lexico(new CharArrayReader(var3.toCharArray()) ));//linea extra
-            pars.parse();        
-        } catch (Exception ex) {
-            System.out.println("Error fatal en compilación de entrada.");
-            System.out.println("Causa: "+ex.getCause());
-        } 
-        
-//        analizadores.Sintactico parseo
-//        parseo =new analizadores.Sintactico(new analizadores.Lexico());
-//        parseo.parse();
-//        
+      
+
+  
         
         
         
         
-        
-        
-        //Main.interpretar(jTextArea1.getText());
-        
-       // Main.interpretar("entrada.txt");
-        
-        //interpretar();
+       
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
