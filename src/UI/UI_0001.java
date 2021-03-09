@@ -60,7 +60,32 @@ public class UI_0001 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        System.out.println("Hola Mundo");
+    try {
+      
+      String dotPath = "C:\\Program Files\\Graphviz2.38\\bin\\dot.exe";
+      
+      String fileInputPath = "F:\\grafo1.txt";
+      String fileOutputPath = "F:\\grafo1.jpg";
+      
+      String tParam = "-Tjpg";
+      String tOParam = "-o";
         
+      String[] cmd = new String[5];
+      cmd[0] = dotPath;
+      cmd[1] = tParam;
+      cmd[2] = fileInputPath;
+      cmd[3] = tOParam;
+      cmd[4] = fileOutputPath;
+                  
+      Runtime rt = Runtime.getRuntime();
+      
+      rt.exec( cmd );
+      
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    } finally {
+    }
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
